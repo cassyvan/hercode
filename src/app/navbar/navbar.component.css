@@ -1,0 +1,126 @@
+.menu-container{
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+.menu-container .toggler{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    opacity: 0;
+}
+
+.menu-container .hamburger-butn{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    width: 50px;
+    height: 60px;
+    padding: 1rem;
+    background: rgba(211, 196, 190, 0.75);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*hamburger lines*/
+.menu-container .hamburger-butn > div {
+    position: relative;
+    width: 100%;
+    height: 2px;
+    background-color: #999999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s ease;
+}
+/*hamburger lines top and bottom*/
+.menu-container .hamburger-butn > div:before,
+.menu-container .hamburger-butn >div:after{
+    content: '';
+    position: absolute;
+    z-index: 1;
+    top: -10px;
+    width: 100%;
+    height: 2px;
+    background: #999999;
+    transition: 0.4s;
+}
+/*hamburger lines - moves line down*/
+.menu-container .hamburger-butn >div:after{
+    top: 10px;
+}
+
+/*hamburger lines - moves line down*/
+.menu-container .hamburger-butn >div:after{
+    top: 10px;
+}
+
+/*toggler animate menu button */
+.menu-container .toggler:checked + .hamburger-butn > div{
+    transform: rotate(135deg);
+}
+
+/*turn lines into x */
+.menu-container .toggler:checked + .hamburger-butn > div:before, 
+.menu-container .toggler:checked + .hamburger-butn > div:after{
+    top: 0;
+    transform: rotate(90deg);
+}
+
+/* The sidebar menu styling */
+
+.menu-container .body-menu> div{
+    background-color: rgba(211, 196, 190, 0.75);
+    border: #999999 solid 1px;
+    width: 20vh;
+    height: 100vh;
+    display: flex;
+}
+.menu-container .body-menu> div > div {
+    max-width: 90vw;
+    max-height: 100vh;
+    padding-top: 8rem;
+}
+
+.menu-container .body-menu> div > div > ul > li {
+    list-style: none;
+    color: #636363;
+    font-size: 1.5rem;
+    padding: 1.5rem;
+    font-family: 'Mulish', sans-serif;
+}
+
+.menu-container .body-menu> div > div > ul > li a{
+    color: #636363;
+    text-decoration: none;
+    transition: color 0.4s ease;
+}
+
+.menu-container .body-menu > div > div > ul > li > a:hover{
+    color: white;
+}
+
+/*Social media transitions*/
+
+.sm-icon{
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    font-size: 40px;
+    color: #636363;
+}
+
+.sm-icon:before{
+    transition: 0.4s;
+}
+
+.sm-icon:hover{
+    color: white;
+}

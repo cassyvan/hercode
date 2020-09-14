@@ -1,0 +1,30 @@
+<!--Social media icons-->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+    integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+<div class="menu-container" (clickOutside)="onClickedOutside()">
+    <input type="checkbox" class="toggler" (input)="onMenuClick()">
+    <div class="hamburger-butn">
+        <div></div>
+    </div>
+    <div class="body-menu" *ngIf="showBox">
+        <div>
+            <div>
+                <ul>
+                    <li><a routerLink="/home">Hello, World!</a></li>
+                    <li><a routerLink="blog">Blog</a></li>
+                    <li><a routerLink="home">Resources</a></li>
+                    <li><a routerLink="/something">Contact Us</a></li>
+                    <li><a href="https://instagram.com/hercodeyyc"><i class="fab fa-instagram sm-icon"></i></a><a
+                            href="https://pinterest.com/hercode"><i class="fab fa-pinterest sm-icon"></i></a>
+                    </li>
+                    <!-- <li>[Search bar]</li> -->
+                </ul>
+                <div class="searchbar">
+                    <div class="bar">
+                        <input type="text" placeholder="Search" size="15"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
