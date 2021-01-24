@@ -7,10 +7,11 @@ import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
-import {NavBarComponent} from './navbar/navbar.component';
-import {HeaderComponent} from './header/header.component';
-import {HomeComponent} from './HomeComponent/home.component';
+import {NavBarComponent} from './components/navbar/navbar.component';
+import {HeaderComponent} from './components/header/header.component';
+import {HomeComponent} from './pages/home/home.component';
 import { ClickOutsideModule } from 'ng-click-outside';
+import { SearchBarComponent } from './components/search-bar/search-bar.component';
 
 const AppRoutes: Routes = [
   { path: 'home', component: HomeComponent }
@@ -22,6 +23,7 @@ const AppRoutes: Routes = [
     NavBarComponent,
     HeaderComponent,
     HomeComponent,
+    SearchBarComponent,
   ],
   imports: [
     BrowserModule,
