@@ -1,0 +1,41 @@
+{
+    "listOfPosts": [
+        {
+            "name": "first blog",
+            "file": "md_file_path",
+            "dateOfPublish": "Jan 1, 2020",
+            "tags": [
+                "lala",
+                "career",
+                "women"
+            ],
+            "author": "Honey"
+        },
+        {
+            "name": "first blog",
+            "file": "md_file_path",
+            "title": "here",
+            "subtitle": "here",
+            "picture": "path_to_pic",
+            "dateOfPublish": "Jan 1, 2020",
+            "tags": [
+                "tech",
+                "career",
+                "women"
+            ],
+            "author": "Honey"
+        },
+        {
+            "name": "first blog",
+            "file": "md_file_path",
+            "dateOfPublish": "Jan 1, 2020",
+            "tags": [
+                "tech",
+                "career",
+                "women"
+            ],
+            "author": "Honey"
+        }
+    ]
+}
+  

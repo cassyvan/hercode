@@ -29,7 +29,7 @@ const AppRoutes: Routes = [
     BrowserModule,
     AppRoutingModule,
     ClickOutsideModule,
-    RouterModule.forRoot(AppRoutes), 
+    RouterModule.forRoot(AppRoutes, { relativeLinkResolution: 'legacy' }), 
     HttpClientModule, 
     MarkdownModule.forRoot({ loader: HttpClient, sanitize: SecurityContext.NONE})
   ],
